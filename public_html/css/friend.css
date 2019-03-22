@@ -1,0 +1,386 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  position: relative;
+}
+
+
+h1, h2 {
+  font-weight: normal;
+  margin: 0;
+  padding: 50px 0;
+}
+
+.white {
+  color: white;
+  letter-spacing: 2px;
+}
+
+h3 {
+  margin: 0;
+  height: 30px;
+  font-size: 13px;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 30px;
+  color: #888;
+  letter-spacing: 4px;
+}
+
+
+
+/* header */
+
+.logout {
+  position: absolute;
+  left: 0;
+  width: 50px;
+  background-color: #999;
+  color: white;
+  cursor: pointer;
+  font-weight: 300;
+  width: 120px;
+  border-radius: 2px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.userList {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #999;
+  border-radius: 2px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px #c1ced7;
+}
+
+
+header {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+  margin: 0;
+  padding: 10px 10px;
+}
+
+header input {
+  width: 300px;
+  height: 40px;
+  /* padding-bottom: 10px; */
+  margin-bottom: 10px;
+}
+
+/* main */
+.name {
+  margin-left: 30px;
+}
+
+/* footer */
+footer {
+  background-color: rgba(200, 200, 200, 0.7);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  margin: 10px 100px;
+
+}
+
+footer .friend {
+  padding: 0 10%;
+  font-size: 35px;
+  float: left;
+  text-decoration: none;
+  color: #888;
+}
+
+footer .talk {
+  padding: 0 10%;
+  font-size: 35px;
+  float: left;
+  text-decoration: none;
+  color: #888;
+}
+
+footer .timeline {
+  padding: 0 10%;
+  font-size: 35px;
+  float: left;
+  text-decoration: none;
+  color: #888;
+}
+
+footer .clear {
+  clear: left;
+}
+
+.mogwai {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.mog {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.userName {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nofriend {
+  font-size: 50px;
+  margin-top: 50px;
+  letter-spacing: 2px;
+  color: #aaa;
+  text-align: center;
+}
+
+.deleteform {
+  display: inline-block;
+}
+
+.delete {
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px gray;
+  text-decoration: none;
+  color: red;
+  margin: auto 30px;
+  width: 100px;
+  height: 55px;
+}
+
+.talkform {
+  display: inline-block;
+}
+
+.talkParticular {
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px gray;
+  text-decoration: none;
+  color: blue;
+  margin: auto 30px;
+  width: 100px;
+  height: 55px;
+}
+
+.form {
+  margin-bottom: 90px;
+  position: fixed;
+  bottom: 0;
+  background-color: green;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.text {
+  height: 50px;
+  width: 80%;
+  margin: 10px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  line-height: 30px;
+}
+
+.btn {
+  height: 50px;
+  width: 80px;
+  background-color: rgba(10, 220, 10, 0.9);
+  cursor: pointer;
+  position: fixed;
+  bottom: 104px;
+}
+
+.timeline {
+  height: 70px;
+  font-size: 30px;
+  line-height: 70px;
+  color: white;
+}
+
+.timelinebox {
+  margin-bottom: 200px;
+}
+
+.postcontainer {
+  margin: 10px;
+}
+
+.postUser {
+  display: inline-block;
+
+}
+
+.postText {
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 30px;
+  background-color: rgba(220, 220, 220, 0.8);
+}
+
+.color {
+  padding: 10px 20px;
+  font-size: 30px;
+  display: inline-block;
+  background-color: rgba(10, 220, 10, 0.8);
+}
+
+.mogwai2 {
+  position: absolute;
+  width: 100px;
+  height: 160px;
+  cursor: not-allowed;
+  animation-name: mogwai;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+
+@keyframes mogwai {
+  0% {
+    top: 0%;
+  }
+
+  25% {
+    top: 8%;
+    left: 70%;
+  }
+
+  50% {
+    top: 16%;
+    left: 0%;
+  }
+
+  75% {
+    top: 24%;
+    left: 70%;
+  }
+
+  100% {
+    top: 32%;
+    left: 0%;
+  }
+}
+
+
+@media (max-width:420px) {
+  header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .friends {
+    margin-bottom: 150px;
+  }
+
+
+
+  .talkform {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+  }
+
+  .deleteform {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 195px;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  footer {
+    height: 50px;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  footer .friend {
+    width: 33%;
+    text-align: center;
+    padding: 0;
+    font-size: 15px;
+    text-decoration: none;
+    color: #888;
+    line-height: 50px;
+  }
+
+  footer .talk {
+    width: 33%;
+    padding: 0;
+    font-size: 15px;
+    text-decoration: none;
+    color: #888;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  footer .timeline {
+    width: 33%;
+    padding: 0;
+    font-size: 15px;
+    text-decoration: none;
+    color: #888;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  /* smartphone timeline.php */
+
+  .form {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .text {
+    height: 50px;
+    width: 70%;
+    margin: 10px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    line-height: 30px;
+  }
+
+  .btn {
+    position: fixed;
+    bottom: 64px;
+  }
+
+}
