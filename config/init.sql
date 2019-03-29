@@ -1,4 +1,8 @@
+create user 'user_name'@'localhost' identified by 'user_password';
+
 create database linedb character set utf8 collate utf8_general_ci;
+
+grant all priveleges on linedb.* to 'user_name'@'localhost';
 
 create table user (id mediumint unsigned not null auto_increment primary key, name varchar(255) not null unique, email varchar(255) not null unique, password varchar(255) not null);
 
